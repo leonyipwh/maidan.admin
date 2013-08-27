@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MaiDan Admin</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link id="skinstyle" rel="stylesheet" href="css/style.palegreen.css" type="text/css" />
+
+<link rel="stylesheet" href="css/responsive-tables.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="js/modernizr.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/flot/jquery.flot.min.js"></script>
+<script type="text/javascript" src="js/flot/jquery.flot.resize.min.js"></script>
+<script type="text/javascript" src="js/responsive-tables.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+
+<div id="mainwrapper" class="mainwrapper">
+    
+    <div class="header">
+        <div class="logo">
+            <a href="dashboard.html"><img src="maidanImg/logo.png" alt="" /></a>
+        </div>
+        <div class="headerinner">
+
+            <ul class="headmenu">
+                <li class="odd">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="count">4</span>
+                        <span class="head-icon head-message"></span>
+                        <span class="headmenu-label">Messages</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-header">Messages</li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Daniel</strong> <small class="muted"> - 2 days ago</small></a></li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jane</strong> <small class="muted"> - 3 days ago</small></a></li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Tanya</strong> <small class="muted"> - 1 week ago</small></a></li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Lee</strong> <small class="muted"> - 1 week ago</small></a></li>
+                        <li class="viewmore"><a href="messages.html">View More Messages</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                    <span class="count">10</span>
+                    <span class="head-icon head-users"></span>
+                    <span class="headmenu-label">New Users</span>
+                    </a>
+                    <ul class="dropdown-menu newusers">
+                        <li class="nav-header">New Users</li>
+                        <li>
+                            <a href="">
+                                <img src="images/photos/thumb1.png" alt="" class="userthumb" />
+                                <strong>Draniem Daamul</strong>
+                                <small>April 20, 2013</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/photos/thumb2.png" alt="" class="userthumb" />
+                                <strong>Shamcey Sindilmaca</strong>
+                                <small>April 19, 2013</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/photos/thumb3.png" alt="" class="userthumb" />
+                                <strong>Nusja Paul Nawancali</strong>
+                                <small>April 19, 2013</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/photos/thumb4.png" alt="" class="userthumb" />
+                                <strong>Rose Cerona</strong>
+                                <small>April 18, 2013</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/photos/thumb5.png" alt="" class="userthumb" />
+                                <strong>John Doe</strong>
+                                <small>April 16, 2013</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="odd">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                    <span class="count">1</span>
+                    <span class="head-icon head-bar"></span>
+                    <span class="headmenu-label">Statistics</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-header">Statistics</li>
+                        <li><a href=""><span class="icon-align-left"></span> New Reports from <strong>Products</strong> <small class="muted"> - 19 hours ago</small></a></li>
+                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Users</strong> <small class="muted"> - 2 days ago</small></a></li>
+                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Comments</strong> <small class="muted"> - 3 days ago</small></a></li>
+                        <li><a href=""><span class="icon-align-left"></span> Most Popular in <strong>Products</strong> <small class="muted"> - 1 week ago</small></a></li>
+                        <li><a href=""><span class="icon-align-left"></span> Most Viewed in <strong>Blog</strong> <small class="muted"> - 1 week ago</small></a></li>
+                        <li class="viewmore"><a href="charts.html">View More Statistics</a></li>
+                    </ul>
+                </li>
+                <li class="right">
+                    <div class="userloggedinfo">
+                        <img src="images/photos/thumb1.png" alt="" />
+                        <div class="userinfo">
+                            <h5>Juan Dela Cruz <small>- juan@themepixels.com</small></h5>
+                            <ul>
+                                <li><a href="editprofile.html">Edit Profile</a></li>
+                                <li><a href="">Account Settings</a></li>
+                                <li><a href="index.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul><!--headmenu-->
+        </div>
+    </div>
+    
+    <div class="leftpanel">
+        
+        <div class="leftmenu">        
+            <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Navigation</li>
+                <li><a href="dashboard.html"><span class="iconfa-laptop"></span> Dashboard</a></li>
+                <li><a href="buttons.html"><span class="iconfa-hand-up"></span> Buttons &amp; Icons</a></li>
+                <li class="dropdown"><a href=""><span class="iconfa-pencil"></span> Forms</a>
+                	<ul>
+                    	<li><a href="forms.html">Form Styles</a></li>
+                        <li><a href="wizards.html">Wizard Form</a></li>
+                        <li><a href="wysiwyg.html">WYSIWYG</a></li>
+                        <li><a href="registration.html">Registration Page</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href=""><span class="iconfa-briefcase"></span> UI Elements &amp; Widgets</a>
+                	<ul>
+                    	<li><a href="elements.html">Theme Components</a></li>
+                        <li><a href="bootstrap.html">Bootstrap Components</a></li>
+                        <li><a href="boxes.html">Headers &amp; Boxes</a></li>
+                    </ul>
+                
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!-- leftpanel -->
+    
+    <div class="rightpanel">
+        
+        <ul class="breadcrumbs">
+            <li><a href="dashboard.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
+            <li>Dashboard</li>
+            <!--  <li class="right">
+                    <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-tint"></i> Color Skins</a>
+                    <ul class="dropdown-menu pull-right skin-color">
+                        <li><a href="default">Default</a></li>
+                        <li><a href="navyblue">Navy Blue</a></li>
+                        <li><a href="palegreen">Pale Green</a></li>
+                        <li><a href="red">Red</a></li>
+                        <li><a href="green">Green</a></li>
+                        <li><a href="brown">Brown</a></li>
+                    </ul>
+            </li> -->
+        </ul>
+        
+        <div class="pageheader">
+            
+            
+            <div class="pagetitle">
+                <h1>Restaurant</h1>
+            </div>
+
+            <div id="r_info">
+               <div><span>Name: </span><span id="r_name">Mai Dan</span></div>
+               <div><span>ID: </span><span id="r_id">M12345</span</div>
+               <div><span>Address: </span><span id="r_address">Block B, 13 Floor, Mai Dan Mansion,HK</span></div>
+               <div><span>Telephone: </span><span id="r_tel">2338 0055</span></div>
+               <div><span>Email: </span><span id="r_email">maidan@mail.com</span></div>
+               <div>Fax: <span id="r_fax">2338 0055</span></div>
+               <div>Website:<span id="r_website">m.maidan.hk</span></div>
+               
+               <div id="editProfileBtn">
+                  <a class="btn btn-rounded" href="">Edit Profile</a>
+               </div>
+
+            </div>
+            <div id="r_profileImg">
+                  <img src="maidanImg/logo.png" alt="" />
+               </div>
+
+
+        </div><!--pageheader-->
+        
+        <div class="maincontent">
+            <div class="maincontentinner">
+                <div class="tableContainer">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs buttons-icons">
+                            <li class="active"><a data-toggle="tab" href="#branch">Branch</a></li>
+                            <li><a data-toggle="tab" href="#dish">Dish</a></li>
+                            <li><a data-toggle="tab" href="#printer">Printer</a></li>
+                            <li><a data-toggle="tab" href="#order">Order</a></li>
+                        </ul>
+                        <div class="tab-content">
+
+                           
+                            <div id="branch" class="tab-pane active">
+                                 <h3>Branch Info</h3>
+
+                                <table class="table ">
+
+                                     <div id="addBranchBtn" class="addBtn"><a href="" class="btn btn-rounded">Add Branch</a></div>
+                                        <thead>
+                                            <tr>
+                                                <th>Branch ID</th>
+                                                <th>Branch Name</th>
+                                                <th>Location</th>
+                                                <th>Printer</th>
+                                                <th> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="r_table">
+                                            <tr>
+                                                <td>MD1024</td>
+                                                <td>Restaurant</td>
+                                                <td>3rd floor, The L Place, 139 Queen Road Central</td>
+                                                <td>TSP100</td>
+                                                <td><a href="" class="btn btn-rounded editBtn">Edit</a></td>
+                                            </tr>
+                                               <tr>
+                                                <td>MD1025</td>
+                                                <td>Bar</td>
+                                                <td>3rd floor, The L Place, 139 Queen Road Central</td>
+                                                <td>TSP200</td>
+                                                <td><a href="" class="btn btn-rounded editBtn">Edit</a></td>
+                                            </tr>
+                                               <tr>
+                                                <td>MD1026</td>
+                                                <td>Restaurant and Bar</td>
+                                                <td>3rd floor, The L Place, 139 Queen Road Central</td>
+                                                <td>TSP300</td>
+                                                <td><a href="" class="btn btn-rounded editBtn">Edit</a></td>
+                                            </tr>
+                                         
+                                        </tbody>
+                                </table>
+                            </div><!--tab-pane-->
+                            
+
+
+                            <div id="dish" class="tab-pane">
+                                <h3>Dish Info</h3>
+
+                                  <table class="table">
+
+                                     <div id="addDishBtn" class="addBtn"><a href="" class="btn btn-rounded">Add Dish</a></div>
+                                        <thead>
+                                            <tr>
+                                                <th>Dish ID</th>
+                                                <th>Dish Name</th>
+                                                <th>Branch Name</th>
+                                                 <th>Branch ID</th>
+                                                <th> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="r_table">
+                                            <tr>
+                                                <td>d34567</td>
+                                                <td>Daal Baati Churma</td>
+                                                <td>Indian Restaurant</td>
+                                                 <td>MD12345</td>  
+                                                <td><a href="" class="btn btn-rounded editBtn">Edit</a></td>
+                                            </tr>        
+                                        </tbody>
+                                </table>                             
+                                
+                            </div>
+
+
+                            <div id="printer" class="tab-pane">
+                                <h3>Printer Info</h3>
+                                <table class="table">
+
+                                     <div id="addPrinterBtn" class="addBtn"><a href="" class="btn btn-rounded">Add Printer</a></div>
+                                        <thead>
+                                            <tr>
+                                                <th>Printer ID</th>
+                                                <th>Branch Location</th>
+                                                 <th>Branch ID</th>
+                                                <th> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="r_table">
+                                            <tr>
+                                                <td>P778778</td>
+                                                <td>Daal Baati Churma</td>
+                                                <td>MD12345</td>
+                                                <td><a href="" class="btn btn-rounded editBtn">Edit</a></td>
+                                            </tr>     
+                                        </tbody>
+                                </table>
+                            
+                                
+                            </div>
+
+                               <div id="order" class="tab-pane">
+                                 <h3>Order Info</h3>
+                                <br/>
+                                   <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Branch Name</th>
+                                                 <th>Branch ID</th>
+                                                <th>Dish Name</th>
+                                                <th>Dish ID</th>
+                                                 <th>Ordered Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="r_table">
+                                            <tr>
+                                                <td>Indian Restaurant</td>
+                                                <td>MD1024</td>
+                                                <td>Daal Baati Churma</td>
+                                                <td>D123456</td>
+                                                <td>1000</td>
+                                            </tr>     
+                                        </tbody>
+                                </table>
+                                             
+                            </div>
+                           
+                          </div><!--tab-pane-->
+
+
+                        </div><!--tabcontent-->
+                   </div>
+                </div>   
+                
+            </div><!--maincontentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--rightpanel-->
+    
+</div><!--mainwrapper-->
+</body>
+</html>
