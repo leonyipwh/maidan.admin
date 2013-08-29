@@ -100,3 +100,12 @@ thead tr
 	margin-left: 0px;
 }
 
+.stdform .desc 
+{ 
+	font-size: 11px; 
+	color: #999; 
+	font-style: italic; 
+	display: block; 
+	margin: 5px 0 0 0px; 
+}
+
