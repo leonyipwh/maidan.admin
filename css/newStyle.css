@@ -81,65 +81,11 @@ thead tr
 	line-height: 7px;
 }
 
-#editProfileFormContainer .pageheader
-{
-	padding-bottom: 10px;
-}
 
-#editProfileFormContainer .tableContainer 
-{
-	margin-top:0px;
-}
-
-#editProfileFormContainer .r_id
+.r_id
 {
 	float:right;
 	margin-top: -20px;
-}
-
-#editProfileFormContainer .stdform input 
-{ 
-	padding: 5px; 
-	border: 1px solid #bbb; 
-}
-
-#editProfileFormContainer .stdform textarea 
-{ 
-	padding: 6px 5px; 
-	border: 1px solid #bbb; 
-}
-
-#editProfileFormContainer .stdform select 
-{ 
-	border: 1px solid #bbb; padding: 5px 2px; 
-}
-
-#editProfileFormContainer .stdform p, .stdform div.par 
-{ 
-	margin: 20px 0; 
-}
-
-#editProfileFormContainer .stdform span.field, .stdform div.field 
-{ 
-	margin-left: 0px; 
-	display: block; 
-	position: relative; 
-}
-
-#editProfileFormContainer .stdform .formwrapper 
-{ 
-	display: block; 
-	padding-top: 5px; 
-	margin-left: 0px; 
-	line-height: 25px; 
-}
-
-#editProfileFormContainer .stdform label 
-{ 
-	font-size: 15px;
-	float: left; 
-	width: 150px; 
-	text-align: left; padding: 5px 20px 0 0; 
 }
 
  .stdform label.error 
@@ -154,18 +100,3 @@ thead tr
 	margin-left: 0px;
 }
 
-#editProfileFormContainer .stdform .desc 
-{ 
-	position: relative;
-	font-size: 11px; 
-	color: #999; 
-	font-style: italic; 
-	margin: 5px 0 0 0px; 
-}
-
-#editProfileFormContainer .stdformbutton .btn
-{
-	padding-left: 50px;
-	padding-right: 50px;
-	margin-top:10px;
-}

@@ -267,7 +267,7 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 }
 .widgettitle { background: #0866c6; color: #fff; padding: 12px 15px; font-size: 14px; }
 .widgettitle span { vertical-align: middle; display: inline-block; margin-right: 8px; }
-.widgetcontent { background: #fff; padding: 15px 12px; border: 2px solid #0866c6; border-top: 0; margin-bottom: 20px; }
+.widgetcontent { background: #fff; padding: 15px 12px 12px 50px; border: 2px solid #0866c6; border-top: 0; margin-bottom: 20px; }
 .widgetcontent p { margin: 15px 0; }
 .wt1 { background: #333; color: #fff; }
 .wc1 { border-color: #333; }
@@ -358,14 +358,14 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 .stdform p, .stdform div.par { margin: 20px 0; }
 .stdform span.field, .stdform div.field { margin-left: 220px; display: block; position: relative; }
 .stdform .formwrapper { display: block; padding-top: 5px; margin-left: 220px; line-height: 25px; }
-.stdform label { float: left; width: 200px; text-align: right; padding: 5px 20px 0 0; }
+.stdform label { float: left; width: 200px; text-align: ; padding: 5px 20px 0 0; }
 .stdform label.error {
 	float: none; display: block; font-size: 11px; color: #ff0000; text-align: left;
 	padding: 0; width: auto; margin-left: 220px;
 }
 .stdform label.valid { color: #468847; }
 .stdform small.desc { font-size: 11px; color: #999; font-style: italic; display: block; margin: 5px 0 0 220px; }
-.stdform .stdformbutton { margin-left: 220px; }
+.stdform .stdformbutton { margin-left: 220px;}
 .stdform #spinner.input-small { width: 100px; }
 
 .stdform2 p, .stdform2 div.par { border-top: 1px solid #ddd; background: #fcfcfc; margin: 0; clear: both; }

@@ -137,7 +137,7 @@
     <div class="rightpanel">
         
         <ul class="breadcrumbs">
-            <li><a href="dashboard.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
+            <li><a href="adminHome.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
             <li>Dashboard</li>
             <!--  <li class="right">
                     <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-tint"></i> Color Skins</a>
@@ -152,16 +152,15 @@
             </li> -->
         </ul>
 
-    <div id="editProfileFormContainer">
         <div class="pageheader">
  
             <div class="pagetitle">
-                <h1>Edit Profile</h1>
-                <h5>Restaurant Information</h5>
+                <h1>Add Branch</h1>
+                <h5>Branch Information</h5>
             </div>
 
              <div class="r_id">
-                <span>Restaurant ID: </span><span id="r_id">M12345</span>
+                <span>Branch ID: </span><span id="r_id">B22222</span>
              </div>
 
         </div><!--pageheader-->
@@ -174,8 +173,18 @@
                         <div class="widgetcontent">
                             <form class="stdform" action="editProfileForm.html" method="post">
 
-                                <div class="par">
-                                    <label>Profile Image</label>
+                                <p>
+                                    <label>Branch Name</label>
+                                    <span class="field"><input type="text" name="r_nameEng" class="input-large" placeholder="Eng" /></span>
+                                </p>
+
+                                 <p>
+                                    <label>分店名稱</label>
+                                    <span class="field"><input type="text" name="r_nameChinese" class="input-large" placeholder="中文" /></span>
+                                </p>
+
+                                   <div class="par">
+                                    <label>Branch Banner</label>
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         
                                         <input type="hidden">
@@ -188,30 +197,56 @@
                                             <span class="fileupload-exists">Change</span>
                                             <input type="file"></span>
                                             <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                            <div class="desc">200px x 200px</div>
+                                            <div class="desc">1000px x 550px</div>
                                         </div>
-
-                                    </div>
-                                    
+                                    </div>   
                                 </div>
 
-                                <p>
-                                    <label>Restaurant Name</label>
-                                    <span class="field"><input type="text" name="r_nameEng" class="input-large" placeholder="Eng" /></span>
-                                </p>
+                                <div class="par">
+                                    <label>Branch Hotpics</label>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        
+                                        <input type="hidden">
+                                        <div class="input-append">
+                                            <div class="uneditable-input span3">
+                                                <i class="iconfa-file fileupload-exists"></i>
+                                                <span class="fileupload-preview"></span>
+                                            </div>
+                                            <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                                            <span class="fileupload-exists">Change</span>
+                                            <input type="file"></span>
+                                            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            <div class="desc">960px × 1172px</div>
+                                        </div>
+                                    </div>   
+                                </div>
+
+                                 <div class="par">
+                                    <label>Branch Thumbnail</label>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        
+                                        <input type="hidden">
+                                        <div class="input-append">
+                                            <div class="uneditable-input span3">
+                                                <i class="iconfa-file fileupload-exists"></i>
+                                                <span class="fileupload-preview"></span>
+                                            </div>
+                                            <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                                            <span class="fileupload-exists">Change</span>
+                                            <input type="file"></span>
+                                            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            <div class="desc">400px × 400px</div>
+                                        </div>
+                                    </div>   
+                                </div>
 
                                  <p>
-                                    <label>餐廳名稱</label>
-                                    <span class="field"><input type="text" name="r_nameChinese" class="input-large" placeholder="中文" /></span>
-                                </p>
-
-                                 <p>
-                                    <label>Restaurant Address</label>
+                                    <label>Branch Address</label>
                                     <span id="r_addressEng" class="field"><textarea cols="80" rows="5" class="span5"></textarea></span> 
                                 </p>
 
                                  <p>
-                                    <label>餐廳地址</label>
+                                    <label>分店地址</label>
                                     <span id="r_addressChinese" class="field"><textarea cols="80" rows="5" class="span5"></textarea></span> 
                                 </p>
 
@@ -243,18 +278,42 @@
                                     </span>
                                 </p>
 
-                                <!--
-                                <p>
+
+                                <div class="par">
                                     <label>Preparation Time</label>
-                                    <span class="field"><input type="text" id="spinner" name="r_preparationTime" class="input-small input-spinner" /> mins</span>
-                                </p>
+                                    <div class="input-append">
+                                    <input type="text" id="appendedInput" class="span1">
+                                    <span class="add-on">mins</span>
+                                    </div>
+                                </div>
 
 
-                                 <p>
+                                <div class="par">
                                     <label>Operation Hours</label>
-                                    <span class="field"><input type="text" name="r_email" class="input-large" placeholder="" /></span>
+                                    <div class="input-append bootstrap-timepicker">
+                                    <input id="timepicker1" type="text" class="input-small" />
+                                    <span class="add-on"><i class="iconfa-time"></i></span>
+                                     </div>
+                                </div>
+
+                                <div class="par">
+                                    <label>Operation Hours</label>
+                                    <div class="input-append bootstrap-timepicker">
+                                    <input id="timepicker1" type="text" class="input-small" />
+                                    <span class="add-on"><i class="iconfa-time"></i></span>
+                                     </div>
+                                </div>
+  
+
+                                <p>
+                                    <label>Status</label>
+                                    <span class="field">
+                                    <select name="select" class="uniformselect">
+                                        <option value="">Open</option>
+                                        <option value="">Closed</option>
+                                    </select>
+                                    </span>
                                 </p>
-                                -->
 
                                 <p>
                                     <label>Remarks:</label>
@@ -265,6 +324,29 @@
                                     <label>備註:</label>
                                     <span id="r_addressChinese" class="field"><textarea cols="80" rows="5" class="span5"></textarea></span> 
                                 </p>
+
+                                <p>
+                                    <label>Add Dish</label>
+                                    <span id="dualselect" class="dualselect">
+                                        <select class="uniformselect" name="select3" multiple="multiple" size="10">
+                                            <option value="">Dish One</option>
+                                            <option value="">Dish Two</option>
+                                            <option value="">Dish Three</option>
+                                            <option value="">Dish Four</option>
+                                            <option value="">Dish Five</option>
+                                            <option value="">Dish Six</option>
+                                            <option value="">Dish Seven</option>
+                                            <option value="">Dish Eight</option>
+                                        </select>
+                                        <span class="ds_arrow">
+                                            <button class="btn ds_prev"><i class="iconfa-chevron-left"></i></button><br>
+                                            <button class="btn ds_next"><i class="iconfa-chevron-right"></i></button>
+                                        </span>
+                                        <select name="select4" multiple="multiple" size="10"></select>
+                                    </span>
+                                </p>
+
+
 
                                 <hr/>
 
@@ -277,7 +359,7 @@
                         </div><!--widget-->
             </div><!--maincontentinner-->
         </div><!--maincontent-->
-    </div><!-- editProfileFormContainer -->
+    </div><!-- formContainer -->
         
     </div><!--rightpanel-->
     
