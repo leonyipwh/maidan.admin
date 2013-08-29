@@ -20,6 +20,8 @@ Created by: Mienard Lumaad (@themepixels)
 @import url('roboto.css');
 @import url('lato.css');
 @import url('font-awesome.min.css');
+/* new css */
+@import url('newStyle.css');
 
 
 /***** RESET BROWSER STYLE *****/
@@ -43,94 +45,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 
-
-/* New */
-thead tr
-{
-	word-spacing: 5px;
-}
-
-#r_info
-{
-			margin-left: 10px;
-			margin-top: 20px !important;
-			width: 500px;
-			font-size: 13px;
-			color:#a29f9b;
-			}
-#editProfileBtn 
-{
-			/*
-			text-decoration: none;
-			margin-top:20px; 
-			padding-left:5px;
-			padding-right: 4px;
-			width:64px;
-			font-size: 13px;
-			border: 1px #94928e solid;
-			background-color: #a5a4a0;
-			color: #2c2c2b !important;
-			*/	
-}
-
-
-#editProfileBtn a
-{
-
-	margin-top: 20px;		
-}
-
-#r_profileImg
-{
-	position: absolute;
-	margin-left: 68%;
-	width: 200px;
-	margin-top: -200px;
-	
-}
-
-#r_profileImg img
-{
-	width: 200px;
-	height: 162px;
-
-}
-
-
-.tableContainer
-{
-	margin-top: 20px;
-}
-
-.r_table.btn 
-{
-	height: 10px;
-	font-size: 10px;
-	padding-top: 0px;
-	padding-bottom: 7px;
-}
-
-.addBtn
-{
-float:right;
-margin-bottom: 10px;
-position:relative;
-}
-
-.addPrinterBtn
-{
-float:right;
-margin-bottom: 10px;
-}
-
-.r_table .editBtn
-{
-font-size: 11px;
-line-height: 7px;
-}
-
-
-/* /New */
 
 ::selection { background: #ccc; color: #fff; text-shadow: none; } /* Safari */
 ::-moz-selection { background: #ccc; color: #fff; text-shadow: none; } /* Firefox */
@@ -232,7 +146,7 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 .headmenu > li > a .headmenu-label { display: block; margin: 2px 0 3px 0; opacity: 0.5; text-align: center; }
 .headmenu > li > a:hover .headmenu-label, .headmenu > li.open > a .headmenu-label { opacity: 1; }
 
-.headmenu > li > a .head-icon { width: 50px; height: 50px; display: block; margin: auto; opacity: 0.5; }
+.headmenu > li > a .head-icon { width: 50px; height: 50px; display: block; margin: auto; opacity: 0.5; font-size: 50px; text-align: center; }
 .headmenu > li > a:hover .head-icon, .headmenu > li.open a .head-icon { opacity: 1; }
 
 .head-message { background-image: url(../images/icons/message.png); }
@@ -2078,7 +1992,7 @@ table td.center, table th.center { text-align: center; }
 		  .header { height: 90px; }
 		  .headmenu > li { font-size: 12px; }
 		  .headmenu > li > a { padding: 25px 5px 9px; }
-		  .headmenu > li > a .head-icon { width: 30px; height: 30px; background-size: cover; }
+		  .headmenu > li > a .head-icon { width: 30px; height: 30px; background-size: cover; text-align: center; }
 		  .leftmenu .nav-tabs.nav-stacked li a { font-size: 13px; }
 		  .leftmenu .nav-tabs.nav-stacked .dropdown ul li a { font-size: 12px; }
 		  .userloggedinfo img { width: 60px; }
