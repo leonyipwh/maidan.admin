@@ -29,6 +29,18 @@
 <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/forms.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+   
+    $('#timepicker1').timepicker('setTime', '7:00 AM');
+    $('#timepicker2').timepicker('setTime', '1:00 PM');
+
+});
+
+        </script>
+
 </head>
 
 <body>
@@ -273,16 +285,14 @@
                                     <input id="timepicker1" type="text" class="input-small" />
                                     <span class="add-on"><i class="iconfa-time"></i></span>
                                      </div>
-                                </div>
 
-                                <div class="par">
-                                    <label>Operation Hours</label>
-                                    <div class="input-append bootstrap-timepicker">
-                                    <input id="timepicker1" type="text" class="input-small" />
+                                     <span> to </span>
+
+                                     <div class="input-append bootstrap-timepicker">
+                                    <input id="timepicker2" type="text" class="input-small" />
                                     <span class="add-on"><i class="iconfa-time"></i></span>
                                      </div>
                                 </div>
-  
 
                                 <p>
                                     <label>Status</label>
