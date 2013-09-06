@@ -81,13 +81,6 @@ thead tr
 	line-height: 7px;
 }
 
-
-.r_id
-{
-	float:right;
-	margin-top: -20px;
-}
-
  .stdform label.error 
 {
 	float: none; 
@@ -107,5 +100,27 @@ thead tr
 	font-style: italic; 
 	display: block; 
 	margin: 5px 0 0 0px; 
+}
+
+.resetBtn
+{
+	float:right;
+}
+
+.submitBtn
+{
+	width: 220px;
+	
+}
+
+.workingHr
+{
+	visibility: hidden;
+}
+
+#id
+{
+	float:right;
+	margin-top: -20px;
 }
 

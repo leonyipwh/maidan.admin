@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>maiDan Admin</title>
+<title>MaiDan Admin</title>
 <link rel="stylesheet" href="css/style.default.css" type="text/css" />
 <link id="skinstyle" rel="stylesheet" href="css/style.palegreen.css" type="text/css" />
 <link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
@@ -29,6 +29,14 @@
 <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/forms.js"></script>
+
+
+<script type="text/javascript">
+
+});
+
+</script>
+
 </head>
 
 <body>
@@ -116,7 +124,7 @@
     <div class="rightpanel">
         
         <ul class="breadcrumbs">
-            <li><a href="dashboard.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
+            <li><a href="adminHome.html"><i class="iconfa-home"></i></a> <span class="separator"></span></li>
             <li>Dashboard</li>
             <!--  <li class="right">
                     <a href="" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-tint"></i> Color Skins</a>
@@ -131,16 +139,15 @@
             </li> -->
         </ul>
 
-    <div id="editProfileFormContainer">
         <div class="pageheader">
  
             <div class="pagetitle">
-                <h1>Edit Profile</h1>
-                <h5>Restaurant Information</h5>
+                <h1>Add Dish</h1>
+                <h5>Dish Information</h5>
             </div>
 
-             <div class="r_id">
-                <span>Restaurant ID: </span><span id="r_id">M12345</span>
+             <div id="id">
+                <span>Dish ID: </span><span class="d_idNum">D22222</span>
              </div>
 
         </div><!--pageheader-->
@@ -153,8 +160,18 @@
                         <div class="widgetcontent">
                             <form class="stdform" action="editProfileForm.html" method="post">
 
-                                <div class="par">
-                                    <label>Profile Image</label>
+                                <p>
+                                    <label>Dish Name</label>
+                                    <span class="field"><input type="text" name="d_nameEng" class="input-large" placeholder="Eng" /></span>
+                                </p>
+
+                                 <p>
+                                    <label>菜式名稱</label>
+                                    <span class="field"><input type="text" name="r_nameChinese" class="input-large" placeholder="中文" /></span>
+                                </p>
+                                <!--
+                                   <div class="par">
+                                    <label>Branch Banner</label>
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         
                                         <input type="hidden">
@@ -167,83 +184,76 @@
                                             <span class="fileupload-exists">Change</span>
                                             <input type="file"></span>
                                             <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                            <div class="desc">200px x 200px</div>
+                                            <div class="desc">1000px x 550px</div>
                                         </div>
-
-                                    </div>
-                                    
+                                    </div>   
                                 </div>
 
-                                <p>
-                                    <label>Restaurant Name</label>
-                                    <span class="field"><input type="text" name="r_nameEng" class="input-large" placeholder="Eng" /></span>
+                                <div class="par">
+                                    <label>Branch Hotpics</label>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        
+                                        <input type="hidden">
+                                        <div class="input-append">
+                                            <div class="uneditable-input span3">
+                                                <i class="iconfa-file fileupload-exists"></i>
+                                                <span class="fileupload-preview"></span>
+                                            </div>
+                                            <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                                            <span class="fileupload-exists">Change</span>
+                                            <input type="file"></span>
+                                            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            <div class="desc">960px × 1172px</div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            -->
+
+                                 <div class="par">
+                                    <label>Dish Thumbnail</label>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        
+                                        <input type="hidden">
+                                        <div class="input-append">
+                                            <div class="uneditable-input span3">
+                                                <i class="iconfa-file fileupload-exists"></i>
+                                                <span class="fileupload-preview"></span>
+                                            </div>
+                                            <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                                            <span class="fileupload-exists">Change</span>
+                                            <input type="file"></span>
+                                            <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            <div class="desc">400px × 400px</div>
+                                        </div>
+                                    </div>   
+                                </div>
+
+                                 <p>
+                                    <label>Description</label>
+                                    <span id="r_addressEng" class="field"><textarea cols="80" rows="5" class="span5" placeholder="Eng"></textarea></span> 
                                 </p>
 
                                  <p>
-                                    <label>餐廳名稱</label>
-                                    <span class="field"><input type="text" name="r_nameChinese" class="input-large" placeholder="中文" /></span>
-                                </p>
-
-                                 <p>
-                                    <label>Restaurant Address</label>
-                                    <span id="r_addressEng" class="field"><textarea cols="80" rows="5" class="span5" placeholder="Eng" ></textarea></span> 
-                                </p>
-
-                                 <p>
-                                    <label>餐廳地址</label>
+                                    <label>菜式描述</label>
                                     <span id="r_addressChinese" class="field"><textarea cols="80" rows="5" class="span5" placeholder="中文"></textarea></span> 
                                 </p>
 
-                                 <p>
-                                    <label>Telephone</label>
-                                    <span class="field"><input type="text" name="r_name" class="input-large" placeholder="+852-8888 8888" /></span>
-                                </p>
+                                <div class="par">
+                                    <label>Price</label>
+                                    <div class="input-prepend input-append">
+                                      <span class="add-on">$</span>
+                                      <input type="text" id="appendedPrependedInput" class="span2">
+                                    
+                                    </div>
+                                </div>
 
-                                 <p>
-                                    <label>Fax</label>
-                                    <span class="field"><input type="text" name="r_fax" class="input-large" placeholder="" /></span>
-                                </p>
-
-                                <p>
-                                    <label>Email</label>
-                                    <span class="field"><input type="text" name="r_email" class="input-large" placeholder="" /></span>
-                                </p>
-
-                                <p>
-                                    <label>Website</label>
-                                    <span class="field"><input type="text" name="r_email" class="input-large" placeholder="" /></span>
-                                </p>
-
-                                <p>
-                                    <label>Prefered Language</label>
-                                    <span class="formwrapper">
-                                        <input type="radio" name="radiofield" checked="checked"/>English &nbsp; &nbsp;
-                                        <input type="radio" name="radiofield"  />中文 &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <!--
-                                <p>
+                                <div class="par">
                                     <label>Preparation Time</label>
-                                    <span class="field"><input type="text" id="spinner" name="r_preparationTime" class="input-small input-spinner" /> mins</span>
-                                </p>
-
-
-                                 <p>
-                                    <label>Operation Hours</label>
-                                    <span class="field"><input type="text" name="r_email" class="input-large" placeholder="" /></span>
-                                </p>
-                                -->
-
-                                <p>
-                                    <label>Remarks:</label>
-                                    <span id="r_addressChinese" class="field"><textarea cols="80" rows="5" class="span5" placeholder="Eng" ></textarea></span> 
-                                </p>
-
-                                <p>
-                                    <label>備註:</label>
-                                    <span id="r_addressChinese" class="field"><textarea cols="80" rows="5" class="span5" placeholder="中文" ></textarea></span> 
-                                </p>
+                                    <div class="input-append">
+                                    <input type="text" id="appendedInput" class="span1">
+                                    <span class="add-on">mins</span>
+                                    </div>
+                                </div>
 
                                 <hr/>
 
@@ -257,10 +267,11 @@
                         </div><!--widget-->
             </div><!--maincontentinner-->
         </div><!--maincontent-->
-    </div><!-- editProfileFormContainer -->
+    </div><!-- formContainer -->
         
     </div><!--rightpanel-->
     
 </div><!--mainwrapper-->
 </body>
+
 </html>

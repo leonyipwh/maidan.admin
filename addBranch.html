@@ -34,12 +34,44 @@
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
    
-    $('#timepicker1').timepicker('setTime', '7:00 AM');
-    $('#timepicker2').timepicker('setTime', '1:00 PM');
+    $('#monOpenHr').timepicker('setTime', '7:00 AM');
+    $('#monCloseHr').timepicker('setTime', '11:00 PM');
+
+    $('#tueOpenHr').timepicker('setTime', '7:00 AM');
+    $('#tueCloseHr').timepicker('setTime', '11:00 PM');
+
+     $('#wedOpenHr').timepicker('setTime', '7:00 AM');
+    $('#wedCloseHr').timepicker('setTime', '11:00 PM');
+
+    $('#thursOpenHr').timepicker('setTime', '1:00 PM');
+    $('#thursCloseHr').timepicker('setTime', '11:00 PM');
+
+    $('#friOpenHr').timepicker('setTime', '7:00 AM');
+    $('#friCloseHr').timepicker('setTime', '11:00 PM');
+
+    $('#satOpenHr').timepicker('setTime', '7:00 AM');
+    $('#satCloseHr').timepicker('setTime', '11:00 PM');
+
+    $('#sunOpenHr').timepicker('setTime', '7:00 AM');
+    $('#sunCloseHr').timepicker('setTime', '11:00 PM');
+
+
+$('.branchOpenStatus').click(function(){
+
+    if ($(this).attr('checked')) 
+    { 
+        $(this).closest('.par').find('.workingHr').css("visibility","visible");
+    }else
+    {
+        $(this).closest('.par').find('.workingHr').css("visibility","hidden");
+    }
+
+      
+    });
 
 });
 
-        </script>
+</script>
 
 </head>
 
@@ -150,7 +182,7 @@ jQuery(document).ready(function ($) {
                 <h5>Branch Information</h5>
             </div>
 
-             <div class="r_id">
+             <div id="id">
                 <span>Branch ID: </span><span id="r_id">B22222</span>
              </div>
 
@@ -261,7 +293,7 @@ jQuery(document).ready(function ($) {
                                     <span class="field"><input type="text" name="r_email" class="input-large" placeholder="" /></span>
                                 </p>
 
-                                <p>
+                                <p id="preferedLang">
                                     <label>Prefered Language</label>
                                     <span class="formwrapper">
                                         <input type="radio" name="radiofield" checked="checked"/>English &nbsp; &nbsp;
@@ -278,22 +310,162 @@ jQuery(document).ready(function ($) {
                                     </div>
                                 </div>
 
+                                
+                                <div id="monWorkingHr" class="par">
+                                    <label>Monday Working Hours</label>
 
-                                <div class="par">
-                                    <label>Operation Hours</label>
-                                    <div class="input-append bootstrap-timepicker">
-                                    <input id="timepicker1" type="text" class="input-small" />
-                                    <span class="add-on"><i class="iconfa-time"></i></span>
-                                     </div>
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
 
-                                     <span> to </span>
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="monOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
 
-                                     <div class="input-append bootstrap-timepicker">
-                                    <input id="timepicker2" type="text" class="input-small" />
-                                    <span class="add-on"><i class="iconfa-time"></i></span>
-                                     </div>
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="monCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
                                 </div>
 
+                                <div id="tueWorkingHr" class="par">
+                                    <label>Tuesday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="tueOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="tueCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div id="wedWorkingHr" class="par">
+                                    <label>Wednesday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="wedOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="wedCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div id="thursWorkingHr" class="par">
+                                    <label>Thursday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="thursOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="thursCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div id="friWorkingHr" class="par">
+                                    <label>Friday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="friOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="friCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div id="satWorkingHr" class="par">
+                                    <label>Saturday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="satOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="satCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div id="sunWorkingHr" class="par">
+                                    <label>Sunday Working Hours</label>
+
+                                    <span>
+                                        <input class="branchOpenStatus" type="checkbox" name="monBranchOpen" style="opacity: 0;">
+                                    </span>
+
+                                    <span class="workingHr">        
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="sunOpenHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+
+                                        <span> to </span>
+
+                                        <div class="input-append bootstrap-timepicker">
+                                            <input id="sunCloseHr" type="text" class="input-small" />
+                                            <span class="add-on"><i class="iconfa-time"></i></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <!--
                                 <p>
                                     <label>Status</label>
                                     <span class="field">
@@ -303,6 +475,7 @@ jQuery(document).ready(function ($) {
                                     </select>
                                     </span>
                                 </p>
+                                -->
 
                                 <p>
                                     <label>Remarks:</label>
@@ -340,7 +513,8 @@ jQuery(document).ready(function ($) {
                                 <hr/>
 
                                 <p class="stdformbutton">
-                                    <button class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="submitBtn btn btn-primary">Submit</button>
+                                    <button type="reset" class="resetBtn btn btn-primary">Reset</button>
                                 </p>
 
                              </form>
@@ -354,4 +528,5 @@ jQuery(document).ready(function ($) {
     
 </div><!--mainwrapper-->
 </body>
+
 </html>
