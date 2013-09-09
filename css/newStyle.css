@@ -11,19 +11,22 @@ thead tr
 	font-size: 13px;
 	color:#a29f9b;
 			}
+
 #editProfileBtn 
 {
-			/*
-			text-decoration: none;
-			margin-top:20px; 
-			padding-left:5px;
-			padding-right: 4px;
-			width:64px;
-			font-size: 13px;
-			border: 1px #94928e solid;
-			background-color: #a5a4a0;
-			color: #2c2c2b !important;
-			*/	
+	/*
+	text-decoration: none;
+	margin-top:20px; 
+	padding-left:5px;
+	padding-right: 4px;
+	width:64px;
+	font-size: 13px;
+	border: 1px #94928e solid;
+	background-color: #a5a4a0;
+	color: #2c2c2b !important;
+
+	
+	*/	
 }
 
 
@@ -104,7 +107,7 @@ thead tr
 
 .resetBtn
 {
-	float:right;
+	float:right !important;
 }
 
 .submitBtn
@@ -115,12 +118,18 @@ thead tr
 
 .workingHr
 {
-	visibility: hidden;
+	/*visibility: hidden;*/
+
 }
 
 #id
 {
 	float:right;
 	margin-top: -20px;
+}
+
+.radioBtnMarginTop
+{
+	padding-bottom: 20px;
 }
 

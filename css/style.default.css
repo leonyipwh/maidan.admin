@@ -154,10 +154,10 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 .head-users { background-image: url(../images/icons/users.png); }
 .head-bar { background-image: url(../images/icons/bar.png); }
 
-.viewmore a { font-size: 11px; text-transform: uppercase; font-size: 11px !important; }
+.viewmore a { font-size: 11px; text-transform: uppercase;font-size: 11px !important; }
 
 .newusers { min-width: 200px; }
-.newusers li a:hover { background; #eee; }
+.newusers li a:hover { background: #eee; }
 .newusers .userthumb { width: 35px; display: block; float: left; margin-right: 10px; }
 .newusers strong { display: block; line-height: normal; }
 .newusers small { color: #999; line-height: normal; }
@@ -359,7 +359,7 @@ h1,h2,h3,h4,h5 { font-weight: normal; line-height: normal; }
 .stdform p, .stdform div.par { margin: 20px 0; }
 .stdform span.field, .stdform div.field { margin-left: 220px; display: block; position: relative; }
 .stdform .formwrapper { display: block; padding-top: 5px; margin-left: 220px; line-height: 25px; }
-.stdform label { float: left; width: 200px; text-align: ; padding: 5px 20px 0 0; }
+.stdform label { float: left; width: 200px; padding: 5px 20px 0 0; }
 .stdform label.error {
 	float: none; display: block; font-size: 11px; color: #ff0000; text-align: left;
 	padding: 0; width: auto; margin-left: 220px;
