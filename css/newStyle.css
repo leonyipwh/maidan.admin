@@ -35,6 +35,11 @@ thead tr
 	margin-top: 20px;		
 }
 
+.r_id
+{
+	float:right;
+}
+
 #r_profileImg
 {
 	position: absolute;
